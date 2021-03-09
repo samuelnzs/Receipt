@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.receipt.RecyclerViewAdapter.AllReceiptAdapter
 import com.example.receipt.RecyclerViewAdapter.PendingReceiptAdapter
 
 class Fragment2 : Fragment() {
@@ -28,7 +27,7 @@ class Fragment2 : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         recycle = view. findViewById(R.id.rcyPendingReceipt)
-        val adapter = AllReceiptAdapter(list)
+        val adapter = PendingReceiptAdapter(list)
         recycle.layoutManager = LinearLayoutManager(activity)
         recycle.adapter = adapter
     }

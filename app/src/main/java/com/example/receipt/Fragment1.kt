@@ -12,7 +12,7 @@ import com.example.receipt.RecyclerViewAdapter.AllReceiptAdapter
 class Fragment1 : Fragment() {
 
     lateinit var recycle : RecyclerView
-    val list = ArrayList<ReceiptInfo>()
+    public  val  list = ArrayList<ReceiptInfo>()
     private val adapter: AllReceiptAdapter = AllReceiptAdapter(list)
 
     override fun onCreateView(

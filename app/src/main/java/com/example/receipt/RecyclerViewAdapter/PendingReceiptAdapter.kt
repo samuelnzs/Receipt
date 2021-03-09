@@ -35,7 +35,8 @@ class PendingReceiptAdapter(private val pendingReceiptList : ArrayList<ReceiptIn
     override fun onBindViewHolder(holder: PendingReceiptViewHolder, position: Int) {
         val currentReceipt = pendingReceiptList[position]
 
-        if(currentReceipt.text3 == "Pending") {
+
+        if(currentReceipt.text5 == "Pending") {
             holder.imageView.setImageResource(currentReceipt.imageResources)
             holder.textView1.text = currentReceipt.text1
             holder.textView2.text = currentReceipt.text2
