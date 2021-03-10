@@ -60,6 +60,14 @@
             android:inputType="time"
             android:text="11:29" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblOutShortDes"
+            android:text="Short Description"
+            android:layout_below="@id/lblOutDocId"
+            android:layout_toRightOf="@id/imgOutDoc"
+            android:paddingLeft="10dp"/>
 
 
     </RelativeLayout>

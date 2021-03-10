@@ -24,18 +24,20 @@ class IncomingAdapter(private val incomingList : ArrayList<InDocInfo>) : Recycle
         val imageView: ImageView = itemView.findViewById(R.id.imgInDoc)
         val textView1 : TextView = itemView.findViewById(R.id.lblSupplierName)
         val textView2 : TextView = itemView.findViewById(R.id.lblInDocId)
-        val textView3 : TextView = itemView.findViewById(R.id.lblInDate)
-        val textView4 : TextView = itemView.findViewById(R.id.lblInTime)
+        val textView3 : TextView = itemView.findViewById(R.id.lblInShortDes)
+        val textView4 : TextView = itemView.findViewById(R.id.lblInDate)
+        val textView5 : TextView = itemView.findViewById(R.id.lblInTime)
     }
 
     override fun onBindViewHolder(holder: IncomingViewHolder, position: Int) {
         val currentReceipt = incomingList[position]
 
         holder.imageView.setImageResource(currentReceipt.imageResources)
-        holder.textView1.text = currentReceipt.text1
-        holder.textView2.text = currentReceipt.text2
-        holder.textView3.text = currentReceipt.text3
-        holder.textView4.text = currentReceipt.text4
+        holder.textView1.text = currentReceipt.SupName
+        holder.textView2.text = currentReceipt.InId
+        holder.textView3.text = currentReceipt.InDocDes
+        holder.textView4.text = currentReceipt.InDocDate
+        holder.textView5.text = currentReceipt.InDocTime
     }
 
 

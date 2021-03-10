@@ -1,3 +1,9 @@
 package com.example.receipt
 
-data class OutDocInfo(val imageResources: Int, val text1: String, val text2:String, val text3: String, val text4: String)
+data class OutDocInfo(
+    val imageResources: Int,
+    val CustName: String,
+    val OutId:String,
+    val OutDocDes:String,
+    val OutDocDate: String,
+    val OutDocTime: String)

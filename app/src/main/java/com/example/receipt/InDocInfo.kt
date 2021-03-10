@@ -1,3 +1,3 @@
 package com.example.receipt
 
-data class InDocInfo (val imageResources: Int, val text1: String, val text2:String, val text3: String, val text4: String)
+data class InDocInfo (val imageResources: Int, val SupName: String, val InId:String,val InDocDes:String, val InDocDate: String, val InDocTime: String)
